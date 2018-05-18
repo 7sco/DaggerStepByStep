@@ -48,4 +48,13 @@ public class App extends Application {
     public static App getApp() {
         return app;
     }
+
+    /**
+     * To get interface we can create a getter method
+     */
+
+    public MemberAppComponent getMemberAppComponent() {
+        return memberAppComponent;
+    }
 }
+
