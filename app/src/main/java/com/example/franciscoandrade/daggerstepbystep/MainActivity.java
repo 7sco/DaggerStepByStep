@@ -9,6 +9,24 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
+    /**
+     * This branch will create:
+     * Module: MemberDataModule
+     * Interface: MemberAppComponent
+     * Main activity can inject member data manager dependency which is provided by member data mosule,
+     * through MemberAppComponent interface
+     *
+     * App: Class acts like an aoutsider, takes responsability to construct all the modules at the beginig,
+     * so relevent onjects can be injected at any time
+     *
+     * MemberAppComponent:is the main interface from which activities and fragments gets the objects, or dependencies,
+     * those dependencies are provided by the modules using aplication interface
+     *
+     *BEHAVIOR of APP:
+     * Main activity, wich is the main view class gets member data manager dependency, provided by member data module,
+     * via member app component interface
+     */
+
     private EditText memberId;
     private Button submitButton;
 
